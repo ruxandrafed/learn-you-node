@@ -1,10 +1,9 @@
 var fs = require('fs');
-var path = require('path');
 
 var regex = new RegExp('\.' + process.argv[3] + '$');
 
 var matching = function(filename) {
-  return regex.test(filename)
+  return regex.test(filename);
 };
 
 var printFiltered = function (err, arr) {

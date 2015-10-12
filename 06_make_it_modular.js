@@ -1,8 +1,8 @@
-var module_filter = require('./06_make_it_modular_module.js');
+var filterStuff = require('./06_make_it_modular_module.js');
 var path = process.argv[2];
 var filter = process.argv[3];
 
-module_filter(path, filter, function (err, list) {
+filterStuff(path, filter, function (err, list) {
     if (err) {
       return console.error(err);
     }
